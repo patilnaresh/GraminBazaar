@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://demo.tanimdesign.net/template/tshop-v1.1/assets/ico/favicon.png">
+    <title>{% block title %} {% endblock %}</title>
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <!-- add theme styles for this template -->
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="{% static 'css/skin-1.css' %}">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <!-- styles needed by mCustomScrollbar -->
+    <link href="{% static 'css/jquery.css' %}" rel="stylesheet">
+    
+    <style>
+      .img {
+        width: 100%;
+        height: 140px;
+        border: 1px solid gray;
+      }
+    </style>
+    
+    <script>
+      paceOptions = {
+        elements: true
+      };
+    </script>
+    <script src="{% static 'js/pace.js' %}"></script>
+    <script type="text/javascript">
+      function swapStyleSheet(sheet){
+        document.getElementById('pagestyle').setAttribute('href', sheet);
+      }
+    </script>
+  </head>
+
+  <body class="  pace-done">
+    <!-- Fixed navbar start -->
+    <div class="navbar navbar-tshop navbar-fixed-top megamenu stuck" role="navigation">      
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"> </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> </button>
+          <a class="navbar-brand" href="#footer"> OKOS </a>
+        </div>
+        
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"> <a href="#"> Home </a> </li>
+            <li class="dropdown megamenu-fullwidth"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"> CATEGORIES <b class="caret"> </b> </a>
+              <ul class="dropdown-menu">
+                <li class="megamenu-content ">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <ul class="col-lg-8  col-sm-8 col-md-8 unstyled noMarginLeft newCollectionUl">
+                        <li class="no-border">
+                          <p class="promo-1"> <strong> ALL CATEGORIES </strong> </p>
+                        </li>
+                        <li> <a href=""> ANIMALS </a> </li>
+                        <li> <a href=""> APPLIANCES </a> </li>
+                        <li> <a href=""> VEHICALS </a> </li>
+                        <li> <a href=""> MOBILES </a> </li>
+                        <li> <a href=""> FURNITURE </a> </li>
+                        <li> <a href=""> GRAINS </a> </li>
+                        <li> <a href=""> FODDER </a> </li>
+                        <li> <a href=""> BUSES TIMINGS </a> </li>
+                        <li> <a href=""> FIND LABUR </a> </li>
+                        <li> <a href=""> FUNCTIONS </a> </li>
+                        <li> <a href=""> FIND DOCTOR </a> </li>
+                        <li> <a href=""> ELECTRONICS </a> </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-9">
+                      <div class="row">
+                        <ul class="col-lg-3  col-sm-3 col-md-3  col-xs-4">
+                          <li> <a class="newProductMenuBlock" href=""> <img class="img-responsive img" src="{% static 'img/cow.jpeg' %}" alt="Animals"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> ANIMALS </span> </a> </li>
+                        </ul>
+                        <ul class="col-lg-3  col-sm-3 col-md-3 col-xs-4">
+                          <li> <a class="newProductMenuBlock" href=""> <img class="img-responsive img" src="{% static 'img/appliances.jpg' %}" alt="Appliances"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> APPLIANCES </span> </a> </li>
+                        </ul>
+                        <ul class="col-lg-3  col-sm-3 col-md-3 col-xs-4">
+                          <li> <a class="newProductMenuBlock" href=""> <img class="img-responsive img" src="{% static 'img/vehicals.jpeg' %}" alt="Vehicals"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> VEHICALS </span> </a> </li>
+                        </ul>
+                        <ul class="col-lg-3  col-sm-3 col-md-3  col-xs-4">
+                          <li> <a class="newProductMenuBlock" href=""> <img class="img-responsive img" src="{% static 'img/mobiles.jpeg' %}" alt="Mobiles"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> MOBILES </span> </a> </li>
+                        </ul>
+                      </div>
+                      <div class="row">
+                        <ul class="col-lg-3  col-sm-3 col-md-3 col-xs-4">
+                          <li> <a class="newProductMenuBlock" href=""> <img class="img-responsive img" src="{% static 'img/furniture.jpg' %}" alt="Furniture"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> FURNITURE </span> </a> </li>
+                        </ul>
+                        <ul class="col-lg-3  col-sm-3 col-md-3 col-xs-4">
+                          <li> <a class="newProductMenuBlock" href=""> <img class="img-responsive img" src="{% static 'img/grains.jpeg' %}" alt="Grains"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> GRAINS </span> </a> </li>
+                        </ul>
+                        <ul class="col-lg-3  col-sm-3 col-md-3  col-xs-4">
+                          <li> <a class="newProductMenuBlock" href=""> <img class="img-responsive img" src="{% static 'img/fodder.jpeg' %}" alt="Fodder"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> FODDER </span> </a> </li>
+                        </ul>
+                        <ul class="col-lg-3  col-sm-3 col-md-3 col-xs-4">
+                          <li> <a class="newProductMenuBlock" href=""> <img class="img-responsive img" src="{% static 'img/bus.jpeg' %}" alt="Buses Timings"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> BUSES TIMINGS </span> </a> </li>
+                        </ul>
+                      </div>
+                      <div class="row">
+                        <ul class="col-lg-3  col-sm-3 col-md-3 col-xs-4">
+                          <li> <a class="newProductMenuBlock" href=""> <img class="img-responsive img" src="{% static 'img/laburs.jpeg' %}" alt="Find Labur"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> FIND LABUR </span> </a> </li>
+                        </ul>
+                        <ul class="col-lg-3  col-sm-3 col-md-3  col-xs-4">
+                          <li> <a class="newProductMenuBlock" href=""> <img class="img-responsive img" src="{% static 'img/tent.jpeg' %}" alt="Functions"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> FUNCTIONS </span> </a> </li>
+                        </ul>
+                        <ul class="col-lg-3  col-sm-3 col-md-3 col-xs-4">
+                          <li> <a class="newProductMenuBlock" href=""> <img class="img-responsive img" src="{% static 'img/doctor.jpeg' %}" alt="Find Doctor"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> FIND DOCTOR </span> </a> </li>
+                        </ul>
+                        <ul class="col-lg-3  col-sm-3 col-md-3 col-xs-4">
+                          <li> <a class="newProductMenuBlock" href=""> <img class="img-responsive img" src="{% static 'img/electronics.jpeg' %}" alt="Electronics"> <span class="ProductMenuCaption"> <i class="fa fa-caret-right"> </i> ELECTRONICS </span> </a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse --> 
+        
+      </div>
+      <!--/.container -->
+      
+      <div class="search-full text-right"> <a class="pull-right search-close"> <i class=" fa fa-times-circle"> </i> </a>
+        <div class="searchInputBox pull-right">
+          <input data-searchurl="search?=" name="q" placeholder="start typing and hit enter to search" class="search-input" type="search">
+          <button class="btn-nobg search-btn" type="submit"> <i class="fa fa-search"> </i> </button>
+        </div>
+      </div>
+      <!--/.search-full--> 
+      
+    </div>
+    <!-- /.Fixed navbar  -->
+    
+    {% block content %} {% endblock %}
+    
+    <footer>
+      <div class="footer" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8  col-md-8 col-sm-10 col-xs-12">
+              <h3> Categories </h3>
+              <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                <ul>
+                  <li> <a href=""> Home </a> </li>
+                  <li> <a href=""> Animals </a> </li>
+                  <li> <a href=""> Appliances </a> </li>
+                </ul>
+              </div>
+              <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                <ul>
+                  <li> <a href=""> Vehicals </a> </li>
+                  <li> <a href=""> Mobiles </a> </li>
+                  <li> <a href=""> Furniture </a> </li>
+                </ul>
+              </div>
+              <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                <ul>
+                  <li> <a href=""> Grains </a> </li>
+                  <li> <a href=""> Fodder </a> </li>
+                  <li> <a href=""> Buses Timings </a> </li>
+                </ul>
+              </div>
+              <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                <ul>
+                  <li> <a href=""> Find Labur </a> </li>
+                  <li> <a href=""> Functions </a> </li>
+                  <li> <a href=""> Find Doctor </a> </li>
+                </ul>
+              </div>
+              <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                <ul>
+                  <li> <a href=""> Electronics </a> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+              <h3> Information </h3>
+              <ul>
+                <li> <a href=""> About Us </a> </li>
+                <li> <a href=""> Contact Us </a> </li>
+              </ul>
+            </div>
+          </div>
+          <!--/.row--> 
+        </div>
+        <!--/.container--> 
+      </div>
+      <!--/.footer-->
+      
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="pull-left"> © Okos 2014. All right reserved. </p>
+        </div>
+      <!--/.footer-bottom--> 
+    </footer>
+    
+    <!-- Placed at the end of the document so the pages load faster --> 
+    <script type="text/javascript" src="{% static 'js/jquery_006.js' %}"></script> 
+    <script src="{% static 'js/bootstrap_002.js' %}"></script>
+    <!-- jQuery minimalect // custom select   --> 
+    <script src="{% static 'js/jquery.js' %}"></script> 
+    <!-- include touchspin.js // touch friendly input spinner component   --> 
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+  </body>
+</html>
